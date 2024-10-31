@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		//features= {".//Features/LoginDDTExcel.feature"},
 		features= {".//Features/Login.feature",".//Features/Registration.feature"},
 		//features= {"@target/rerun.txt"},
-		glue="stepDefinitions",
+		glue={"stepDefinitions","hooks"},
 		plugin= {"pretty", "html:reports/myreport.html",
 				//"rerun:target/rerun.txt",
 				"com.aventstack.extentreports.cucumber.adpter.ExtentCucumberAdapter:"
